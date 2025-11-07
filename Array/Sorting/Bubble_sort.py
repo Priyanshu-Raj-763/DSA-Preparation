@@ -13,4 +13,6 @@ def bubbleSort(arr):
 
 arr = [70,60,50,40,30,20,10]
 result = bubbleSort(arr)
-print("Arr after bubble sort ",result)
+print("Sorted Arr after bubble sort ",result)
+
+#Time complexity = O(n^2)
