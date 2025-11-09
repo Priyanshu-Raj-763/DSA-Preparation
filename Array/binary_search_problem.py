@@ -14,12 +14,14 @@ You are a product manager and currently leading a team to develop a new product.
 def firstZero(arr):
     s =  0
     e = len(arr) - 1
-    while(s <= e):
+    first_bad = -1
+    while s <= e:
         mid = s + (e-s)//2
-        if(arr[mid] == 0):
-            s = mid +1
-        else:
+        if arr[mid] == 1:
+            first_bad = mid
             e = mid - 1
+        else:
+            s = mid +1
     return mid
 
 Input = [0,0,0,1,1,1,1,1,1]
